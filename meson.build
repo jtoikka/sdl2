@@ -199,6 +199,7 @@ elif host_machine.system() == 'darwin'
   cdata.set('SDL_LOADSO_DLOPEN', 1)
   cdata.set('SDL_VIDEO_DRIVER_COCOA', 1)
   cdata.set('SDL_AUDIO_DRIVER_COREAUDIO', 1)
+  cdata.set('SDL_VIDEO_OPENGL', 1)
   cdata.set('SDL_VIDEO_OPENGL_CGL', 1)
   core_args += ['-pthread']
   core_deps += [dependency('appleframeworks',
